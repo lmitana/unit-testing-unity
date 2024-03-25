@@ -25,7 +25,7 @@ public class CharacterInventory : MonoBehaviour
     #endregion
 
     #region Initializations
-    void Start()
+    public void Start()
     {
         instance = this;
         itemEntry = new InventoryEntry(0, null, null);
@@ -38,7 +38,7 @@ public class CharacterInventory : MonoBehaviour
     }
     #endregion
 
-    void Update()
+    public void Update()
     {
         #region Watch for Hotbar Keypresses - Called by Character Controller Later
         //Checking for a hotbar key to be pressed
